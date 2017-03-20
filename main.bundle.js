@@ -48,77 +48,77 @@ var mailboxData = {
     'userId': '28a89b94fa12372d365e5369',
     'email': 'user@mail.com',
     'name': 'Alexanger Gulnyashkin',
-    'photo': '/assets/img/avatar.jpg',
+    'photo': '/email-on-angular-2/assets/img/avatar.jpg',
     'contacts': [
         {
             'id': '67a09eb98fqj372d365e5063',
             'name': 'Stark Stein',
             'email': 'starkstein@paragonia.com',
             'phone': '+7 (990) 459-32-33',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09eb98faj372d365e5064',
             'name': 'Austin Wyatt',
             'email': 'austinwyatt@paragonia.com',
             'phone': '+7 (952) 563-38-24',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '27a09eb98faj372d365e5063',
             'name': 'Lolita Whitney',
             'email': 'lolitawhitney@paragonia.com',
             'phone': '+7 (842) 529-36-86',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '47a09eb98faj372d365e5063',
             'name': 'Charmaine Richardson',
             'email': 'charmainerichardson@paragonia.com',
             'phone': '+7 (845) 428-28-44',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09el98faj372d365e5063',
             'name': 'Potter Fuentes',
             'email': 'potterfuentes@paragonia.com',
             'phone': '+7 (916) 562-38-40',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09eb98faj3l2d365e5063',
             'name': 'Yang Kent',
             'email': 'yangkent@paragonia.com',
             'phone': '+7 (859) 402-32-05',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09eb98fa7372d365e5063',
             'name': 'Hollie Larson',
             'email': 'hollielarson@paragonia.com',
             'phone': '+7 (879) 428-26-41',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09e888faj372d365e5063',
             'name': 'Latoya Rush',
             'email': 'latoyarush@paragonia.com',
             'phone': '+7 (876) 589-28-46',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '67a09eb98faj372d365e3063',
             'name': 'Willa Estrada',
             'email': 'willaestrada@paragonia.com',
             'phone': '+7 (966) 449-38-75',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         },
         {
             'id': '65a09eb98faj372d365e5063',
             'name': 'Heather Kane',
             'email': 'heatherkane@paragonia.com',
             'phone': '+7 (920) 596-29-84',
-            'photo': '/assets/img/avatar.jpg'
+            'photo': '/email-on-angular-2/assets/img/avatar.jpg'
         }
     ]
 };
@@ -626,7 +626,7 @@ var letters = {
                             name: '',
                             email: sent.addressee,
                             phone: '',
-                            photo: '/assets/img/avatar.jpg'
+                            photo: '/email-on-angular-2/assets/img/avatar.jpg'
                         })
                             .subscribe(function () {
                             subscriber.next(true);
@@ -786,7 +786,7 @@ var LettersService = (function () {
         });
     };
     LettersService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__mailbox_service__["a" /* MailboxService */]) === 'function' && _a) || Object])
     ], LettersService);
     return LettersService;
@@ -865,7 +865,7 @@ var AuthService = (function () {
         return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of((__WEBPACK_IMPORTED_MODULE_4__app_data__["c" /* user */].email === email && __WEBPACK_IMPORTED_MODULE_4__app_data__["c" /* user */].password === password) ? __WEBPACK_IMPORTED_MODULE_4__app_data__["c" /* user */].id : '');
     };
     AuthService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object])
     ], AuthService);
     return AuthService;
@@ -905,7 +905,7 @@ var SearchService = (function () {
         return this._filter;
     };
     SearchService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [])
     ], SearchService);
     return SearchService;
@@ -949,7 +949,7 @@ var CanActivateService = (function () {
         });
     };
     CanActivateService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__login_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__login_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], CanActivateService);
     return CanActivateService;
@@ -1022,7 +1022,7 @@ var LoginComponent = (function () {
             selector: 'app-login',
             template: __webpack_require__(611),
             styles: [__webpack_require__(589)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], LoginComponent);
     return LoginComponent;
@@ -1102,11 +1102,11 @@ var ContactFormComponent = (function () {
             if (this._contactId) {
                 this._contactsService.saveContact(Object.assign(contact, {
                     id: this._contactId,
-                    photo: '/assets/img/avatar.jpg'
+                    photo: '/email-on-angular-2/assets/img/avatar.jpg'
                 }));
             }
             else {
-                this._contactsService.saveContact(Object.assign(contact, { photo: '/assets/img/avatar.jpg' }));
+                this._contactsService.saveContact(Object.assign(contact, { photo: '/email-on-angular-2/assets/img/avatar.jpg' }));
             }
         }
     };
@@ -1118,7 +1118,7 @@ var ContactFormComponent = (function () {
             name: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].minLength(2)]),
             email: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].pattern(/^[0-9a-z-.]+@[0-9a-z-]{2,}\.[a-z]{2,}$/i)]),
             phone: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */](''),
-            photo: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]({ value: '/assets/img/avatar.jpg', disabled: true })
+            photo: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]({ value: '/email-on-angular-2/assets/img/avatar.jpg', disabled: true })
         });
         this._valueChanges();
     };
@@ -1137,7 +1137,7 @@ var ContactFormComponent = (function () {
                 name: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */](contact.name, [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].minLength(2)]),
                 email: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */](contact.email, [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* Validators */].pattern(/^[0-9a-z-.]+@[0-9a-z-]{2,}\.[a-z]{2,}$/i)]),
                 phone: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */](contact.phone),
-                photo: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]({ value: '/assets/img/avatar.jpg', disabled: true })
+                photo: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]({ value: '/email-on-angular-2/assets/img/avatar.jpg', disabled: true })
             });
             _this._valueChanges();
         });
@@ -1188,7 +1188,7 @@ var ContactFormComponent = (function () {
             selector: 'app-contact-form',
             template: __webpack_require__(612),
             styles: [__webpack_require__(590)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__contacts_contacts_service__["a" /* ContactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__contacts_contacts_service__["a" /* ContactsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__mailbox_service__["a" /* MailboxService */]) === 'function' && _e) || Object])
     ], ContactFormComponent);
     return ContactFormComponent;
@@ -1293,7 +1293,7 @@ var ContactsComponent = (function () {
             selector: 'app-contacts',
             template: __webpack_require__(615),
             styles: [__webpack_require__(593)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__menu_search_search_service__["a" /* SearchService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__menu_search_search_service__["a" /* SearchService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */]) === 'function' && _c) || Object])
     ], ContactsComponent);
     return ContactsComponent;
@@ -1404,7 +1404,7 @@ var LetterComponent = (function () {
             selector: 'app-letter',
             template: __webpack_require__(617),
             styles: [__webpack_require__(595)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__tools_tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__tools_tools_service__["a" /* ToolsService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _e) || Object])
     ], LetterComponent);
     return LetterComponent;
@@ -1578,7 +1578,7 @@ var LettersComponent = (function () {
             selector: 'app-letters',
             template: __webpack_require__(618),
             styles: [__webpack_require__(596)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__tools_tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__tools_tools_service__["a" /* ToolsService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__menu_search_search_service__["a" /* SearchService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__menu_search_search_service__["a" /* SearchService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__mailbox_service__["a" /* MailboxService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _f) || Object])
     ], LettersComponent);
     return LettersComponent;
@@ -1640,7 +1640,7 @@ var MailboxComponent = (function () {
             selector: 'app-mailbox',
             template: __webpack_require__(619),
             styles: [__webpack_require__(597)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__mailbox_service__["a" /* MailboxService */]) === 'function' && _c) || Object])
     ], MailboxComponent);
     return MailboxComponent;
@@ -1780,7 +1780,7 @@ var NewLetterComponent = (function () {
             selector: 'app-new-letter',
             template: __webpack_require__(623),
             styles: [__webpack_require__(601)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__letters_service__["a" /* LettersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__letters_service__["a" /* LettersService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__contacts_contacts_service__["a" /* ContactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__contacts_contacts_service__["a" /* ContactsService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _e) || Object])
     ], NewLetterComponent);
     return NewLetterComponent;
@@ -1841,7 +1841,7 @@ var MailboxService = (function () {
         return __WEBPACK_IMPORTED_MODULE_2__app_data__["a" /* mailbox */].getMailbox();
     };
     MailboxService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [])
     ], MailboxService);
     return MailboxService;
@@ -2098,7 +2098,7 @@ var ToolsService = (function () {
         return this;
     };
     ToolsService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__letters_service__["a" /* LettersService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__mailbox_service__["a" /* MailboxService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _c) || Object])
     ], ToolsService);
     return ToolsService;
@@ -2133,7 +2133,7 @@ var AppComponent = (function () {
             selector: 'app-root',
             template: __webpack_require__(610),
             styles: [__webpack_require__(588)]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
@@ -2287,7 +2287,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_33__mailbox_contacts_contacts_service__["a" /* ContactsService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], AppModule);
     return AppModule;
@@ -2371,7 +2371,7 @@ var ContactFilterPipe = (function () {
     ContactFilterPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Pipe */])({
             name: 'contactFilter'
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], ContactFilterPipe);
     return ContactFilterPipe;
@@ -2412,7 +2412,7 @@ var ContactComponent = (function () {
         this._contactsService.removeContact(this.contact.id);
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__contact_interface__["Contact"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__contact_interface__["Contact"]) === 'function' && _a) || Object)
     ], ContactComponent.prototype, "contact", void 0);
     ContactComponent = __decorate([
@@ -2420,7 +2420,7 @@ var ContactComponent = (function () {
             selector: 'app-contact',
             template: __webpack_require__(613),
             styles: [__webpack_require__(591)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */]) === 'function' && _b) || Object])
     ], ContactComponent);
     return ContactComponent;
@@ -2464,7 +2464,7 @@ var ContactsToolsComponent = (function () {
             selector: 'app-contacts-tools',
             template: __webpack_require__(614),
             styles: [__webpack_require__(592)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */]) === 'function' && _a) || Object])
     ], ContactsToolsComponent);
     return ContactsToolsComponent;
@@ -2499,7 +2499,7 @@ var FoldersComponent = (function () {
             selector: 'app-folders',
             template: __webpack_require__(616),
             styles: [__webpack_require__(594)]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], FoldersComponent);
     return FoldersComponent;
@@ -2555,7 +2555,7 @@ var LetterDatePipe = (function () {
     LetterDatePipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Pipe */])({
             name: 'letterDate'
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], LetterDatePipe);
     return LetterDatePipe;
@@ -2626,7 +2626,7 @@ var LetterFilterPipe = (function () {
     LetterFilterPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Pipe */])({
             name: 'letterFilter'
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], LetterFilterPipe);
     return LetterFilterPipe;
@@ -2667,7 +2667,7 @@ var NoLettersPipe = (function () {
     NoLettersPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Pipe */])({
             name: 'noLetters'
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], NoLettersPipe);
     return NoLettersPipe;
@@ -2707,7 +2707,7 @@ var SortPipe = (function () {
     SortPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Pipe */])({
             name: 'sort'
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], SortPipe);
     return SortPipe;
@@ -2790,7 +2790,7 @@ var MenuComponent = (function () {
     }
     MenuComponent.prototype.ngOnInit = function () { };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__mailbox_interface__["Mailbox"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__mailbox_interface__["Mailbox"]) === 'function' && _a) || Object)
     ], MenuComponent.prototype, "mailbox", void 0);
     MenuComponent = __decorate([
@@ -2798,7 +2798,7 @@ var MenuComponent = (function () {
             selector: 'app-menu',
             template: __webpack_require__(620),
             styles: [__webpack_require__(598)]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], MenuComponent);
     return MenuComponent;
@@ -2864,7 +2864,7 @@ var SearchComponent = (function () {
             selector: 'app-search',
             template: __webpack_require__(621),
             styles: [__webpack_require__(599)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__search_service__["a" /* SearchService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__search_service__["a" /* SearchService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === 'function' && _b) || Object])
     ], SearchComponent);
     return SearchComponent;
@@ -2906,7 +2906,7 @@ var UserThumbComponent = (function () {
         this._authService.logout();
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__mailbox_interface__["Mailbox"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__mailbox_interface__["Mailbox"]) === 'function' && _a) || Object)
     ], UserThumbComponent.prototype, "mailbox", void 0);
     UserThumbComponent = __decorate([
@@ -2914,7 +2914,7 @@ var UserThumbComponent = (function () {
             selector: 'app-user-thumb',
             template: __webpack_require__(622),
             styles: [__webpack_require__(600)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__login_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__login_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object])
     ], UserThumbComponent);
     return UserThumbComponent;
@@ -2951,19 +2951,19 @@ var OutsideClickDirective = (function () {
         }
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* Output */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* Output */])(),
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* EventEmitter */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* EventEmitter */]) === 'function' && _a) || Object)
     ], OutsideClickDirective.prototype, "outsideClick", void 0);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* HostListener */])('document:click', ['$event', '$event.target']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object, Object]), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* HostListener */])('document:click', ['$event', '$event.target']),
+        __metadata('design:type', Function),
+        __metadata('design:paramtypes', [Object, Object]),
         __metadata('design:returntype', void 0)
     ], OutsideClickDirective.prototype, "onClick", null);
     OutsideClickDirective = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Directive */])({
             selector: '[outsideClick]'
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ElementRef */]) === 'function' && _b) || Object])
     ], OutsideClickDirective);
     return OutsideClickDirective;
@@ -3008,7 +3008,7 @@ var InboxLetterToolsComponent = (function () {
         this._toolsService.markLetterAsSpam(this.letterId);
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', String)
     ], InboxLetterToolsComponent.prototype, "letterId", void 0);
     InboxLetterToolsComponent = __decorate([
@@ -3016,7 +3016,7 @@ var InboxLetterToolsComponent = (function () {
             selector: 'app-inbox-letter-tools',
             template: __webpack_require__(624),
             styles: [__webpack_require__(602)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], InboxLetterToolsComponent);
     return InboxLetterToolsComponent;
@@ -3092,7 +3092,7 @@ var InboxToolsComponent = (function () {
             selector: 'app-inbox-tools',
             template: __webpack_require__(625),
             styles: [__webpack_require__(603)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], InboxToolsComponent);
     return InboxToolsComponent;
@@ -3131,7 +3131,7 @@ var SentLetterToolsComponent = (function () {
         this._toolsService.deleteLetter(this.letterId);
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', String)
     ], SentLetterToolsComponent.prototype, "letterId", void 0);
     SentLetterToolsComponent = __decorate([
@@ -3139,7 +3139,7 @@ var SentLetterToolsComponent = (function () {
             selector: 'app-sent-letter-tools',
             template: __webpack_require__(626),
             styles: [__webpack_require__(604)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], SentLetterToolsComponent);
     return SentLetterToolsComponent;
@@ -3208,7 +3208,7 @@ var SentToolsComponent = (function () {
             selector: 'app-sent-tools',
             template: __webpack_require__(627),
             styles: [__webpack_require__(605)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], SentToolsComponent);
     return SentToolsComponent;
@@ -3253,7 +3253,7 @@ var SpamLetterToolsComponent = (function () {
         this._toolsService.markLetterAsNotSpam(this.letterId);
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', String)
     ], SpamLetterToolsComponent.prototype, "letterId", void 0);
     SpamLetterToolsComponent = __decorate([
@@ -3261,7 +3261,7 @@ var SpamLetterToolsComponent = (function () {
             selector: 'app-spam-letter-tools',
             template: __webpack_require__(628),
             styles: [__webpack_require__(606)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], SpamLetterToolsComponent);
     return SpamLetterToolsComponent;
@@ -3337,7 +3337,7 @@ var SpamToolsComponent = (function () {
             selector: 'app-spam-tools',
             template: __webpack_require__(629),
             styles: [__webpack_require__(607)]
-        }), 
+        }),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__tools_service__["a" /* ToolsService */]) === 'function' && _a) || Object])
     ], SpamToolsComponent);
     return SpamToolsComponent;
@@ -3367,11 +3367,11 @@ var ToolsComponent = (function () {
     function ToolsComponent() {
     }
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', String)
     ], ToolsComponent.prototype, "mailboxName", void 0);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Input */])(),
         __metadata('design:type', String)
     ], ToolsComponent.prototype, "letterId", void 0);
     ToolsComponent = __decorate([
@@ -3379,7 +3379,7 @@ var ToolsComponent = (function () {
             selector: 'app-tools',
             template: __webpack_require__(630),
             styles: [__webpack_require__(608)]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], ToolsComponent);
     return ToolsComponent;
@@ -3466,7 +3466,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".contact {\r\n    border: 1px solid #D1D1D1;\r\n    border-radius: 3px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    font-size: 1.5rem;\r\n\r\n    overflow: hidden;\r\n}\r\n\r\n/* Инструменты */\r\n\r\n.contact__tools {\r\n    padding: 10px;\r\n\r\n    border-bottom: 1px solid #D1D1D1;\r\n\r\n    text-align: right;\r\n}\r\n.contact__tool {\r\n    display: inline-block;\r\n    margin-left: 10px;\r\n}\r\n.contact__delete {\r\n    height: 15px;\r\n    padding: 0;\r\n    width: 15px;\r\n\r\n    border: none;\r\n\r\n    background: url('/assets/img/delete.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.contact__edit {\r\n    height: 15px;\r\n    padding: 0;\r\n    width: 15px;\r\n\r\n    border: none;\r\n\r\n    background: url('/assets/img/edit.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n\r\n/* Информация о контакте */\r\n\r\n.contact__info {\r\n    padding: 10px;\r\n\r\n    text-align: center;\r\n}\r\n.contact__info-item {\r\n    margin-bottom: 10px;\r\n}\r\n.contact__info-item:last-of-type {\r\n    margin-bottom: 0;\r\n}\r\n.contact__photo {\r\n    width: 50px;\r\n\r\n    border-radius: 50%;\r\n}\r\n.contact__name {\r\n    padding-left: 25px;\r\n\r\n    background: url('/assets/img/name.svg') left center/15px 15px no-repeat;\r\n}\r\n.contact__email {\r\n    padding-left: 25px;\r\n\r\n    background: url('/assets/img/email.svg') left center/15px 15px no-repeat;\r\n}\r\n.contact__phone {\r\n    padding-left: 25px;\r\n\r\n    background: url('/assets/img/phone.svg') left center/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".contact {\r\n    border: 1px solid #D1D1D1;\r\n    border-radius: 3px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    font-size: 1.5rem;\r\n\r\n    overflow: hidden;\r\n}\r\n\r\n/* Инструменты */\r\n\r\n.contact__tools {\r\n    padding: 10px;\r\n\r\n    border-bottom: 1px solid #D1D1D1;\r\n\r\n    text-align: right;\r\n}\r\n.contact__tool {\r\n    display: inline-block;\r\n    margin-left: 10px;\r\n}\r\n.contact__delete {\r\n    height: 15px;\r\n    padding: 0;\r\n    width: 15px;\r\n\r\n    border: none;\r\n\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.contact__edit {\r\n    height: 15px;\r\n    padding: 0;\r\n    width: 15px;\r\n\r\n    border: none;\r\n\r\n    background: url('/email-on-angular-2/assets/img/edit.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n\r\n/* Информация о контакте */\r\n\r\n.contact__info {\r\n    padding: 10px;\r\n\r\n    text-align: center;\r\n}\r\n.contact__info-item {\r\n    margin-bottom: 10px;\r\n}\r\n.contact__info-item:last-of-type {\r\n    margin-bottom: 0;\r\n}\r\n.contact__photo {\r\n    width: 50px;\r\n\r\n    border-radius: 50%;\r\n}\r\n.contact__name {\r\n    padding-left: 25px;\r\n\r\n    background: url('/email-on-angular-2/assets/img/name.svg') left center/15px 15px no-repeat;\r\n}\r\n.contact__email {\r\n    padding-left: 25px;\r\n\r\n    background: url('/email-on-angular-2/assets/img/email.svg') left center/15px 15px no-repeat;\r\n}\r\n.contact__phone {\r\n    padding-left: 25px;\r\n\r\n    background: url('/email-on-angular-2/assets/img/phone.svg') left center/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3484,7 +3484,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_add-user {\r\n    background: url('/assets/img/add-new-user.svg') center 5px/18px 18px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_add-user {\r\n    background: url('/email-on-angular-2/assets/img/add-new-user.svg') center 5px/18px 18px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3574,7 +3574,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".mailbox {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n\r\n    font-size: 1.5rem;\r\n}\r\n.mailbox__menu {\r\n    height: 50px;\r\n    line-height: 50px;\r\n    background-color: #F1F1F1;\r\n}\r\n.mailbox__main {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    padding: 20px;\r\n    position: relative;\r\n}\r\n.mailbox__footer {\r\n    line-height: 80px;\r\n    margin-top: 40px;\r\n    padding: 0 20px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.mailbox__preloader {\r\n    height: 3px;\r\n    left: 0;\r\n    right: 0;\r\n    position: absolute;\r\n    top: 0;\r\n\r\n    overflow: hidden;\r\n}\r\n.mailbox__preloader:before {\r\n    height: 100%;\r\n    position: absolute;\r\n    width: 200%;\r\n\r\n    background: -webkit-repeating-linear-gradient(135deg, #4285F4 0px, #4285F4 10px, #fff 10px, #fff 20px);\r\n\r\n    background: repeating-linear-gradient(-45deg, #4285F4 0px, #4285F4 10px, #fff 10px, #fff 20px);\r\n\r\n    -webkit-animation: preloader 10s linear infinite;\r\n\r\n            animation: preloader 10s linear infinite;\r\n    content: '';\r\n}\r\n@-webkit-keyframes preloader {\r\n    0% {\r\n        right: 0;\r\n    }\r\n    100% {\r\n        right: -100%;\r\n    }\r\n}\r\n@keyframes preloader {\r\n    0% {\r\n        right: 0;\r\n    }\r\n    100% {\r\n        right: -100%;\r\n    }\r\n}\r\n.mailbox__sidebar {\r\n    -webkit-box-flex: 0;\r\n        -ms-flex: 0 0 15%;\r\n            flex: 0 0 15%;\r\n    margin-right: 5%;\r\n}\r\n.mailbox__content {\r\n    -webkit-box-flex: 0;\r\n        -ms-flex: 0 0 80%;\r\n            flex: 0 0 80%;\r\n}\r\n.mailbox__row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    margin-bottom: 20px;\r\n}\r\n.mailbox__write-new {\r\n    display: block;\r\n    height: 30px;\r\n    padding: 7px 10px;\r\n    width: 160px;\r\n\r\n    border-radius: 3px;\r\n\r\n    background: #FFF1BE url('/assets/img/to-write.svg') 24px center/15px 12px no-repeat;\r\n\r\n    color: inherit;\r\n    text-align: center;\r\n    text-decoration: none;\r\n}\r\n.mailbox__write-new:hover {\r\n    background-color: #FBE07D;\r\n}\r\n.mailbox__update {\r\n    display: block;\r\n    height: 30px;\r\n    margin-left: 10px;\r\n    padding: 7px 10px;\r\n    width: 30px;\r\n\r\n    border: none;\r\n    border-radius: 3px;\r\n\r\n    background: #FFF1BE url('/assets/img/update.svg') center center/15px 12px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.mailbox__update:hover {\r\n    background-color: #FBE07D;\r\n}\r\n.mailbox__folders {\r\n    margin-bottom: 40px;\r\n}\r\n.mailbox__advertisement {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 300px;\r\n    padding: 5px;\r\n\r\n    border: 1px solid #FFF1BE;\r\n\r\n    background-color: #FEF9E8;\r\n\r\n    text-align: center;\r\n}\r\n.mailbox__advertisement p {\r\n    padding: 5px 0;\r\n}\r\n.mailbox__advertisement a {\r\n    color: inherit;\r\n}\r\n", ""]);
+exports.push([module.i, ".mailbox {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n\r\n    font-size: 1.5rem;\r\n}\r\n.mailbox__menu {\r\n    height: 50px;\r\n    line-height: 50px;\r\n    background-color: #F1F1F1;\r\n}\r\n.mailbox__main {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    padding: 20px;\r\n    position: relative;\r\n}\r\n.mailbox__footer {\r\n    line-height: 80px;\r\n    margin-top: 40px;\r\n    padding: 0 20px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.mailbox__preloader {\r\n    height: 3px;\r\n    left: 0;\r\n    right: 0;\r\n    position: absolute;\r\n    top: 0;\r\n\r\n    overflow: hidden;\r\n}\r\n.mailbox__preloader:before {\r\n    height: 100%;\r\n    position: absolute;\r\n    width: 200%;\r\n\r\n    background: -webkit-repeating-linear-gradient(135deg, #4285F4 0px, #4285F4 10px, #fff 10px, #fff 20px);\r\n\r\n    background: repeating-linear-gradient(-45deg, #4285F4 0px, #4285F4 10px, #fff 10px, #fff 20px);\r\n\r\n    -webkit-animation: preloader 10s linear infinite;\r\n\r\n            animation: preloader 10s linear infinite;\r\n    content: '';\r\n}\r\n@-webkit-keyframes preloader {\r\n    0% {\r\n        right: 0;\r\n    }\r\n    100% {\r\n        right: -100%;\r\n    }\r\n}\r\n@keyframes preloader {\r\n    0% {\r\n        right: 0;\r\n    }\r\n    100% {\r\n        right: -100%;\r\n    }\r\n}\r\n.mailbox__sidebar {\r\n    -webkit-box-flex: 0;\r\n        -ms-flex: 0 0 15%;\r\n            flex: 0 0 15%;\r\n    margin-right: 5%;\r\n}\r\n.mailbox__content {\r\n    -webkit-box-flex: 0;\r\n        -ms-flex: 0 0 80%;\r\n            flex: 0 0 80%;\r\n}\r\n.mailbox__row {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: justify;\r\n        -ms-flex-pack: justify;\r\n            justify-content: space-between;\r\n    margin-bottom: 20px;\r\n}\r\n.mailbox__write-new {\r\n    display: block;\r\n    height: 30px;\r\n    padding: 7px 10px;\r\n    width: 160px;\r\n\r\n    border-radius: 3px;\r\n\r\n    background: #FFF1BE url('/email-on-angular-2/assets/img/to-write.svg') 24px center/15px 12px no-repeat;\r\n\r\n    color: inherit;\r\n    text-align: center;\r\n    text-decoration: none;\r\n}\r\n.mailbox__write-new:hover {\r\n    background-color: #FBE07D;\r\n}\r\n.mailbox__update {\r\n    display: block;\r\n    height: 30px;\r\n    margin-left: 10px;\r\n    padding: 7px 10px;\r\n    width: 30px;\r\n\r\n    border: none;\r\n    border-radius: 3px;\r\n\r\n    background: #FFF1BE url('/email-on-angular-2/assets/img/update.svg') center center/15px 12px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.mailbox__update:hover {\r\n    background-color: #FBE07D;\r\n}\r\n.mailbox__folders {\r\n    margin-bottom: 40px;\r\n}\r\n.mailbox__advertisement {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    height: 300px;\r\n    padding: 5px;\r\n\r\n    border: 1px solid #FFF1BE;\r\n\r\n    background-color: #FEF9E8;\r\n\r\n    text-align: center;\r\n}\r\n.mailbox__advertisement p {\r\n    padding: 5px 0;\r\n}\r\n.mailbox__advertisement a {\r\n    color: inherit;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3610,7 +3610,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".search {\r\n    height: 30px;\r\n    position: relative;\r\n    width: 100%;\r\n}\r\n.search__field {\r\n    height: 30px;\r\n    padding: 0 70px 0 10px;\r\n    width: 100%;\r\n\r\n    border: 1px solid #ccc;\r\n    border-radius: 3px;\r\n}\r\n.search__btn {\r\n    height: 30px;\r\n    padding: 0;\r\n    position: absolute;\r\n    right: 0;\r\n    top: 12px;\r\n    width: 60px;\r\n\r\n    border: none;\r\n    border-top-right-radius: 3px;\r\n    border-bottom-right-radius: 3px;\r\n\r\n    background: #4285F4 url('/assets/img/search.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.search__btn:hover {\r\n    background-color: #3A77D8;\r\n}\r\n", ""]);
+exports.push([module.i, ".search {\r\n    height: 30px;\r\n    position: relative;\r\n    width: 100%;\r\n}\r\n.search__field {\r\n    height: 30px;\r\n    padding: 0 70px 0 10px;\r\n    width: 100%;\r\n\r\n    border: 1px solid #ccc;\r\n    border-radius: 3px;\r\n}\r\n.search__btn {\r\n    height: 30px;\r\n    padding: 0;\r\n    position: absolute;\r\n    right: 0;\r\n    top: 12px;\r\n    width: 60px;\r\n\r\n    border: none;\r\n    border-top-right-radius: 3px;\r\n    border-bottom-right-radius: 3px;\r\n\r\n    background: #4285F4 url('/email-on-angular-2/assets/img/search.svg') center center/15px 15px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n.search__btn:hover {\r\n    background-color: #3A77D8;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3628,7 +3628,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".user {\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: end;\r\n        -ms-flex-pack: end;\r\n            justify-content: flex-end;\r\n    height: 100%;\r\n\r\n    font-size: 1.5rem;\r\n}\r\n.user__info {\r\n}\r\n.user__name,\r\n.user__email {\r\n    line-height: 1.5rem;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.user__name {\r\n\r\n}\r\n.user__email {\r\n    font-size: 1.2rem;\r\n}\r\n.user__photo {\r\n    height: 40px;\r\n    margin: 0 15px;\r\n    width: 40px;\r\n\r\n    border-radius: 50%;\r\n}\r\n.user__exit-btn {\r\n    height: 40px;\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 20px;\r\n\r\n    border: none;\r\n\r\n    background: url('/assets/img/exit.svg') right center/20px 20px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n", ""]);
+exports.push([module.i, ".user {\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-pack: end;\r\n        -ms-flex-pack: end;\r\n            justify-content: flex-end;\r\n    height: 100%;\r\n\r\n    font-size: 1.5rem;\r\n}\r\n.user__info {\r\n}\r\n.user__name,\r\n.user__email {\r\n    line-height: 1.5rem;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.user__name {\r\n\r\n}\r\n.user__email {\r\n    font-size: 1.2rem;\r\n}\r\n.user__photo {\r\n    height: 40px;\r\n    margin: 0 15px;\r\n    width: 40px;\r\n\r\n    border-radius: 50%;\r\n}\r\n.user__exit-btn {\r\n    height: 40px;\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 20px;\r\n\r\n    border: none;\r\n\r\n    background: url('/email-on-angular-2/assets/img/exit.svg') right center/20px 20px no-repeat;\r\n\r\n    cursor: pointer;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3664,7 +3664,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_spam {\r\n    background: url('/assets/img/spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_spam {\r\n    background: url('/email-on-angular-2/assets/img/spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3682,7 +3682,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_spam {\r\n    background: url('/assets/img/spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_spam {\r\n    background: url('/email-on-angular-2/assets/img/spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3700,7 +3700,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3718,7 +3718,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3736,7 +3736,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_not-spam {\r\n    background: url('/assets/img/not-spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_not-spam {\r\n    background: url('/email-on-angular-2/assets/img/not-spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3754,7 +3754,7 @@ exports = module.exports = __webpack_require__(10)();
 
 
 // module
-exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_not-spam {\r\n    background: url('/assets/img/not-spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
+exports.push([module.i, ".tools__list {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-flow: row nowrap;\r\n            flex-flow: row nowrap;\r\n\r\n    font-size: 1.2rem;\r\n}\r\n.tools__item {\r\n    height: 45px;\r\n    padding: 25px 10px 5px;\r\n\r\n    background-color: #F1F1F1;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_all {\r\n    line-height: 50px;\r\n    margin-right: 10px;\r\n    padding: 0;\r\n\r\n    border: none;\r\n\r\n    background: none;\r\n\r\n    cursor: default;\r\n}\r\n.tools__item_all > input {\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.tools__item_delete {\r\n    background: url('/email-on-angular-2/assets/img/delete.svg') center 5px/15px 15px no-repeat;\r\n}\r\n.tools__item_not-spam {\r\n    background: url('/email-on-angular-2/assets/img/not-spam.svg') center 5px/15px 15px no-repeat;\r\n}\r\n", ""]);
 
 // exports
 
@@ -4039,7 +4039,7 @@ var ContactsService = (function () {
         return this;
     };
     ContactsService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__mailbox_service__["a" /* MailboxService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__mailbox_service__["a" /* MailboxService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ContactsService);
     return ContactsService;
