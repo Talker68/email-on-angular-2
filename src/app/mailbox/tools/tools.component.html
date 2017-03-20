@@ -1,0 +1,19 @@
+<!-- Панели инструментов для почтовых ящиков -->
+<div *ngIf="!letterId">
+    <div [ngSwitch]="mailboxName">
+        <app-inbox-tools *ngSwitchCase="'inbox'"></app-inbox-tools>
+        <app-sent-tools *ngSwitchCase="'sent'"></app-sent-tools>
+        <app-spam-tools *ngSwitchCase="'spam'"></app-spam-tools>
+    </div>
+</div>
+<!-- Панели инструментов для писем -->
+<div *ngIf="letterId">
+    <div [ngSwitch]="mailboxName">
+        <app-inbox-letter-tools *ngSwitchCase="'inbox'"
+            [letterId]="letterId"></app-inbox-letter-tools>
+        <app-sent-letter-tools *ngSwitchCase="'sent'"
+            [letterId]="letterId"></app-sent-letter-tools>
+        <app-spam-letter-tools *ngSwitchCase="'spam'"
+            [letterId]="letterId"></app-spam-letter-tools>
+    </div>
+</div>

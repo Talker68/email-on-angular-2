@@ -1,0 +1,9 @@
+<div class="user"
+    *ngIf="mailbox">
+    <div class="user__info">
+        <p class="user__name">{{mailbox.name}}</p>
+        <p class="user__email">({{mailbox.email}})</p>
+    </div>
+    <img class="user__photo" src="{{mailbox.photo}}" alt="">
+    <button class="user__exit-btn" (click)="onExit()"></button>
+</div>

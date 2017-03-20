@@ -1,0 +1,18 @@
+<div class="contact">
+    <ul class="contact__tools">
+        <li class="contact__tool">
+            <button class="contact__edit"
+                [routerLink]="['./edit', contact.id]"></button>
+        </li>
+        <li class="contact__tool">
+            <button class="contact__delete"
+                (click)="onDelete()"></button>
+        </li>
+    </ul>
+    <div class="contact__info">
+        <p class="contact__info-item"><img class="contact__photo" src="{{contact.photo}}" alt=""></p>
+        <p class="contact__info-item"><span class="contact__name">{{contact.name || 'Имя не указано'}}</span></p>
+        <p class="contact__info-item"><span class="contact__email">{{contact.email}}</span></p>
+        <p class="contact__info-item"><span class="contact__phone">{{contact.phone || 'Телефон не указан'}}</span></p>
+    </div>
+</div>

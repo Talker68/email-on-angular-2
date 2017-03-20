@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    font-size: 1.5rem;
+}
+.menu_search {
+    flex: 1 1 50%;
+}
+.menu__contacts {
+    flex: 1 1 20%;
+}
+.menu__link {
+    color: inherit;
+    text-decoration: none;
+}
+.menu__user {
+    flex: 1 1 30%;
+
+    text-align: right;
+}

@@ -1,0 +1,83 @@
+.letter {
+
+}
+
+/* Инструменты */
+
+.letter__tools {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+/* Информация о письме */
+
+.letter__subject {
+    margin: 20px 0;
+
+    font-size: 2rem;
+}
+.letter__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    font-size: 1.2rem;
+}
+.letter__from {
+    display: flex;
+    flex: 0 0 80%;
+    padding-left: 80px;
+    position: relative;
+}
+.letter__from:before {
+    display: block;
+    justify-content: flex-start;
+    height: 30px;
+    left: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    width: 70px;
+    z-index: 1;
+
+    border-right: 1px solid #ccc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    background-color: #F1F1F1;
+
+    text-align: center;
+
+    content: 'От кого:';
+}
+.letter__name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.letter__email {
+
+}
+.letter__date {
+    flex: 0 0 20%;
+    padding-right: 15px;
+
+    text-align: right;
+}
+
+/* Письмо */
+
+.letter__body {
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    line-height: 25px;
+}

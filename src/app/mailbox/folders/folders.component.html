@@ -1,0 +1,23 @@
+<ul class="folders">
+    <li class="folders__item"
+        routerLinkActive="active">
+        <a class="folders__link"
+            [routerLink]="['./letters', 'inbox']">
+            Входящие
+        </a>
+    </li>
+    <li class="folders__item"
+        routerLinkActive="active">
+        <a class="folders__link"
+            [routerLink]="['./letters', 'sent']">
+            Отправленные
+        </a>
+    </li>
+    <li class="folders__item"
+        routerLinkActive="active">
+        <a class="folders__link"
+            [routerLink]="['./letters', 'spam']">
+            Спам
+        </a>
+    </li>
+</ul>

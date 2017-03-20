@@ -1,0 +1,46 @@
+<div class="auth">
+
+    <!-- Данные входа -->
+
+    <div class="auth__data">
+        <p class="auth__email">user@mail.com</p>
+        <p class="auth__password">123</p>
+    </div>
+
+    <!-- Сообщение об ошибке -->
+    <div class="auth__error"
+        [class.show]="error">
+        <p>Пароль и/или логин введены не верно!</p>
+    </div><!-- .auth__error -->
+
+    <!-- Форма -->
+    <div class="auth__wrapper">
+
+        <p class="auth__info">Вход в почтовый ящик:</p>
+
+        <form [formGroup]="loginForm"
+            (ngSubmit)="login(loginForm.controls['email'].value, loginForm.controls['password'].value)">
+
+            <label for="email"
+                class="auth__label">Email: </label>
+            <input id="email"
+                class="auth__input"
+                type="text"
+                [formControl]="loginForm.controls['email']">
+
+            <label for="password"
+                class="auth__label">Пароль: </label>
+            <input id="password"
+                class="auth__input"
+                type="password"
+                [formControl]="loginForm.controls['password']">
+
+            <button class="auth__button"
+                type="submit">
+                Войти
+            </button>
+
+        </form>
+
+    </div><!-- .auth__wrapper -->
+</div><!-- .auth -->

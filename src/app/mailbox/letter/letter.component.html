@@ -1,0 +1,21 @@
+<div class="letter"
+    *ngIf="letter">
+
+    <!-- Инструменты -->
+
+    <div class="letter__tools">
+        <app-tools [mailboxName]="mailboxName" [letterId]="letterId"></app-tools>
+    </div>
+
+    <!-- Письмо -->
+
+    <div class="letter__subject">{{letter.subject}}</div>
+    <div class="letter__header">
+        <div class="letter__from">
+            <p class="letter__name">{{letter.name}}</p>
+            <p class="letter__email">{{letter.email}}</p>
+        </div>
+        <div class="letter__date">{{letter.date | letterDate}}</div>
+    </div>
+    <div class="letter__body">{{letter.body}}</div>
+</div>

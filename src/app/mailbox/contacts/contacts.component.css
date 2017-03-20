@@ -1,0 +1,26 @@
+.contacts {
+}
+
+/* Инструменты */
+
+.contacts__tools {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+/* Контакты */
+
+.contacts__list {
+    display: flex;
+    flex-flow: row wrap;
+}
+.contacts__item {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+.contacts__item:nth-child(3n + 3) {
+    margin-right: 0;
+}

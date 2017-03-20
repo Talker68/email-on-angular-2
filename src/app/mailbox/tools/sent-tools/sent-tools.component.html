@@ -1,0 +1,11 @@
+<ul class="tools__list">
+    <li class="tools__item tools__item_all">
+        <input type="checkbox"
+            [checked]="checkedAll"
+            (change)="onSelectAll($event.target.checked)">
+    </li>
+    <li class="tools__item tools__item_delete"
+        (click)="onDelete()">
+        Удалить
+    </li>
+</ul>

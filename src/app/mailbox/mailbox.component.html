@@ -1,0 +1,59 @@
+<div class="mailbox">
+
+    <!-- Меню -->
+
+    <div class="mailbox__menu">
+        <app-menu [mailbox]="mailbox"></app-menu>
+    </div>
+
+    <!-- Основной контент -->
+
+    <div class="mailbox__main">
+
+        <!-- Индикатор загрузки -->
+
+        <p class="mailbox__preloader"
+            *ngIf="loading"></p>
+
+        <!-- Сайдбар -->
+
+        <div class="mailbox__sidebar">
+
+            <!-- Кнопки "написать" и "обновить" -->
+
+            <div class="mailbox__row">
+                <a class="mailbox__write-new"
+                    [routerLink]="['./letter', 'new']">
+                    Написать
+                </a>
+                <button class="mailbox__update"
+                    (click)="updatePage()"></button>
+            </div>
+
+            <!-- Почтовые ящики -->
+
+            <div class="mailbox__folders">
+                <app-folders></app-folders>
+            </div>
+
+            <!-- Реклама -->
+
+            <div class="mailbox__advertisement">
+                <p>Здесь могла бы быть ваша реклама!</p>
+                <p><a href="#" target="_blank">Успейте заказать</a></p>
+            </div>
+        </div>
+
+        <!-- Контент -->
+
+        <div class="mailbox__content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <!-- Футер -->
+
+    <div class="mailbox__footer">
+        Приложение "Почтовый ящик" сделано с помощью Angular 2.
+    </div>
+</div>

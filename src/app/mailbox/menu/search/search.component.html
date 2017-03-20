@@ -1,0 +1,11 @@
+<form class="search"
+    [formGroup]="searchForm"
+    (ngSubmit)="seek(searchForm.controls['input'].value)">
+    <input class="search__field"
+        type="text"
+        placeholder="Искать..."
+        [formControl]="searchForm.controls['input']">
+    <button  class="search__btn"
+        type="submit">
+    </button>
+</form>

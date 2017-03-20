@@ -1,0 +1,21 @@
+.folders {
+    font-size: 1.4rem;
+}
+.folders__item {
+    margin-bottom: 10px;
+
+    border-radius: 3px;
+}
+.folders__item.active,
+.folders__item:hover {
+    border-right: 3px solid #FCE07C;
+
+    background-color: #FEF9E8;
+}
+.folders__link {
+    display: block;
+    padding: 7px 5px;
+
+    color: inherit;
+    text-decoration: none;
+}

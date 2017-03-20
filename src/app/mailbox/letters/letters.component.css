@@ -1,0 +1,83 @@
+.letters {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Инструменты */
+
+.letters__tools {
+    margin-bottom: 20px;
+    padding: 0 15px 5px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+/* Список писем */
+
+.letters__list {
+}
+.letters__item {
+    border-bottom: 1px solid #d0d0d0;
+
+    color: #000;
+    text-decoration: none;
+}
+.letters__item:nth-child(2n) {
+    background-color: #f3f3f3;
+}
+.letters__item:hover {
+    background-color: #e3e3e3;
+}
+
+/* Чекбокс */
+
+.letters__checkbox {
+    float: left;
+    margin: 15px;
+    padding: 0;
+    position: relative;
+    top: 5px;
+    width: 14px;
+
+    cursor: pointer;
+}
+
+/* Письмо */
+
+.letters__letter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 100%;
+    padding: 15px 15px 15px 5px;
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+.letters__letter-name {
+    flex: 0 0 20%;
+    padding-right: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.letters__letter-content {
+    flex: 0 0 70%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.letters__letter-subject {
+    font-weight: bold;
+}
+.letters__letter-short-body {
+}
+.letters__letter-date {
+    flex: 0 0 10%;
+
+    text-align: right;
+}

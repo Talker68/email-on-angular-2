@@ -1,0 +1,14 @@
+<ul class="menu">
+    <li class="menu__contacts">
+        <a class="menu__link"
+            [routerLink]="['./contacts']">
+            Контакты
+        </a>
+    </li>
+    <li class="menu_search">
+        <app-search></app-search>
+    </li>
+    <li class="menu__user">
+        <app-user-thumb [mailbox]="mailbox"></app-user-thumb>
+    </li>
+</ul>

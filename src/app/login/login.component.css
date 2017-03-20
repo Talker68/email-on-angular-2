@@ -1,0 +1,132 @@
+.auth {
+    height: 352px;
+    margin: calc(50vh - 235px) auto 0 auto;
+    padding-top: 70px;
+    position: relative;
+    width: 300px;
+
+    font-size: 14px;
+}
+
+/* Данные входа */
+
+.auth__data {
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    border-bottom: 1px solid #ccc;
+
+    background-color: #F3F3F3;
+}
+.auth__email,
+.auth__password {
+    padding-left: 70px;
+    position: relative;
+}
+.auth__email {
+    margin-bottom: 10px;
+}
+.auth__email:before,
+.auth__password:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+
+    font-weight: bold;
+}
+.auth__email:before {
+    content: 'Email:';
+}
+.auth__password:before {
+    content: 'Пароль:';
+}
+
+/* Сообщение об ошибке */
+
+.auth__error {
+    left: 0;
+    margin: 0 auto;
+    padding: 10px 25px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+
+    border-radius: 3px;
+
+    background-color: #FF8985;
+
+    color: #941410;
+
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+.auth__error.show {
+    opacity: 1;
+    transition: none;
+}
+
+/* Форма */
+
+.auth__wrapper {
+    padding: 25px;
+    width: 300px;
+
+    border-radius: 3px;
+
+    background-color: #F3F3F3;
+}
+.auth__info {
+    margin-bottom: 25px;
+
+    font-weight: bold;
+}
+.auth__label {
+    display: block;
+    margin-bottom: 5px;
+
+    cursor: pointer;
+}
+.auth__input {
+    display: block;
+    height: 30px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    width: 250px;
+
+    border: 1px solid #4285F4;
+    border-radius: 3px;
+}
+.auth__input:hover {
+    border: 1px solid #3A77D8;
+
+    box-shadow: inset 0 0 1px 0 #3A77D8;
+}
+.auth__input.error {
+    border-color: #941410;
+}
+
+/* Кнопка входа */
+
+.auth__button {
+    display: block;
+    padding: 10px 0;
+    width: 100px;
+
+    border: 1px solid #507299;
+    border-radius: 3px;
+
+    background-color: #4285F4;
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+.auth__button:hover {
+    background-color: #3A77D8;
+}

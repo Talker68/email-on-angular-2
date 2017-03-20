@@ -1,0 +1,123 @@
+.mailbox {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+}
+.mailbox__menu {
+    height: 50px;
+    line-height: 50px;
+    background-color: #F1F1F1;
+}
+.mailbox__main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.mailbox__footer {
+    line-height: 80px;
+    margin-top: 40px;
+    padding: 0 20px;
+
+    background-color: #F1F1F1;
+
+    font-size: 1.2rem;
+}
+.mailbox__preloader {
+    height: 3px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+
+    overflow: hidden;
+}
+.mailbox__preloader:before {
+    height: 100%;
+    position: absolute;
+    width: 200%;
+
+    background: repeating-linear-gradient(-45deg, #4285F4 0px, #4285F4 10px, #fff 10px, #fff 20px);
+
+    animation: preloader 10s linear infinite;
+    content: '';
+}
+@keyframes preloader {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100%;
+    }
+}
+.mailbox__sidebar {
+    flex: 0 0 15%;
+    margin-right: 5%;
+}
+.mailbox__content {
+    flex: 0 0 80%;
+}
+.mailbox__row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.mailbox__write-new {
+    display: block;
+    height: 30px;
+    padding: 7px 10px;
+    width: 160px;
+
+    border-radius: 3px;
+
+    background: #FFF1BE url('/assets/img/to-write.svg') 24px center/15px 12px no-repeat;
+
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+.mailbox__write-new:hover {
+    background-color: #FBE07D;
+}
+.mailbox__update {
+    display: block;
+    height: 30px;
+    margin-left: 10px;
+    padding: 7px 10px;
+    width: 30px;
+
+    border: none;
+    border-radius: 3px;
+
+    background: #FFF1BE url('/assets/img/update.svg') center center/15px 12px no-repeat;
+
+    cursor: pointer;
+}
+.mailbox__update:hover {
+    background-color: #FBE07D;
+}
+.mailbox__folders {
+    margin-bottom: 40px;
+}
+.mailbox__advertisement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding: 5px;
+
+    border: 1px solid #FFF1BE;
+
+    background-color: #FEF9E8;
+
+    text-align: center;
+}
+.mailbox__advertisement p {
+    padding: 5px 0;
+}
+.mailbox__advertisement a {
+    color: inherit;
+}

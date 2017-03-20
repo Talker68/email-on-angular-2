@@ -1,0 +1,82 @@
+<div class="new-letter">
+
+    <!-- Сообщение об ошибке -->
+
+    <p class="new-letter__error"
+        *ngIf="notValidForm">
+        Форма должна быть валидной!
+    </p>
+
+    <!-- Форма -->
+
+    <form class="new-letter__form"
+        autocomplete="off"
+        [formGroup]="newLetterForm"
+        (ngSubmit)="sendLetter(newLetterForm.value)">
+
+        <!-- Поле ввода адресата -->
+
+        <div class="new-letter__field">
+            <label class="new-letter__label"
+                for="addressee">
+                Кому:
+            </label>
+
+            <input class="new-letter__input"
+                id="addressee"
+                type="text"
+                [class.error]="!newLetterForm.controls['addressee'].valid
+                    && newLetterForm.controls['addressee'].touched"
+                [class.valid]="newLetterForm.controls['addressee'].valid
+                    && newLetterForm.controls['addressee'].touched"
+                [formControl]="newLetterForm.controls['addressee']">
+
+            <!-- Всплывающее окно со списком возможных адресатов из списка контактов -->
+
+            <ul class="new-letter__possible-contact-list"
+                (outsideClick)="outsideClick()"
+                *ngIf="possibleContacts">
+                <li class="new-letter__possible-contact"
+                    *ngFor="let possibleContact of possibleContacts"
+                    (click)="selectContact(possibleContact)">
+
+                    <span class="new-letter__possible-contact-name">{{possibleContact.name}}</span>&nbsp;{{possibleContact.email}}
+
+                </li>
+            </ul>
+        </div><!-- .new-letter__field -->
+
+        <!-- Поле ввода темы письма -->
+
+        <div class="new-letter__field">
+            <label class="new-letter__label"
+                for="subject">
+                Тема:
+            </label>
+
+            <input class="new-letter__input"
+                id="subject"
+                type="text"
+                [class.error]="!newLetterForm.controls['subject'].valid
+                    && newLetterForm.controls['subject'].touched"
+                [class.valid]="newLetterForm.controls['subject'].valid
+                    && newLetterForm.controls['subject'].touched"
+                [formControl]="newLetterForm.controls['subject']">
+        </div><!-- .new-letter__field -->
+
+        <!-- Поле ввода письма -->
+
+        <div class="new-letter__field">
+            <textarea class="new-letter__body"
+                [formControl]="newLetterForm.controls['body']"></textarea>
+        </div><!-- .new-letter__field -->
+
+        <!-- Кнопка отправки письма -->
+
+        <button class="new-letter__send-btn"
+            type="submit">
+            Отправить
+        </button><!-- .new-letter__send-btn -->
+
+    </form><!-- .new-letter__form -->
+</div><!-- .new-letter -->

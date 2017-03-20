@@ -1,0 +1,18 @@
+<div class="contacts">
+
+    <!-- Инструменты -->
+
+    <div class="contacts__tools">
+        <app-contacts-tools></app-contacts-tools>
+    </div>
+
+    <!-- Контакты -->
+
+    <ul class="contacts__list">
+        <li  class="contacts__item"
+            *ngFor="let contact of contacts | contactFilter:filterForContacts">
+            <app-contact [contact]="contact">
+            </app-contact>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+.tools__list {
+    display: flex;
+    flex-flow: row nowrap;
+
+    font-size: 1.2rem;
+}
+.tools__item {
+    height: 45px;
+    padding: 25px 10px 5px;
+
+    background-color: #F1F1F1;
+
+    cursor: pointer;
+}
+.tools__item_add-user {
+    background: url('/assets/img/add-new-user.svg') center 5px/18px 18px no-repeat;
+}

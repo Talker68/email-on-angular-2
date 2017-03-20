@@ -1,0 +1,94 @@
+.contact-form {
+    font-size: 1.5rem;
+}
+
+/* Сообщение об ошибке */
+
+.contact-form__error {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+
+    border: 1px solid #FDBCBC;
+    border-radius: 3px;
+
+    background-color: #FAD3D3;
+
+    color: #FF0000;
+}
+
+/* Форма */
+
+.contact-form__form {
+    display: block;
+    width: 100%;
+}
+.contact-form__field {
+    margin-bottom: 15px;
+    position: relative;
+}
+.contact-form__label {
+    display: block;
+    height: 30px;
+    left: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    width: 70px;
+    z-index: 1;
+
+    border: 1px solid #ccc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    background-color: #F1F1F1;
+
+    font-size: 1.2rem;
+    text-align: center;
+
+    cursor: pointer;
+}
+.contact-form__input {
+    height: 30px;
+    padding: 0 10px 0 80px;
+    width: 100%;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    font-family: inherit;
+    font-size: inherit;
+}
+.contact-form__input.error {
+    background-color: #FAD3D3;
+}
+.contact-form__input.valid {
+    background-color: #D3FAD9;
+}
+.contact-form__text {
+    min-height: 400px;
+    padding: 10px;
+    width: 100%;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    resize: vertical;
+}
+.contact-form__add-btn {
+    padding: 7px 12px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #4285F4;
+
+    color: #fff;
+
+    cursor: pointer;
+}
+.contact-form__add-btn:hover {
+    background-color: #3A77D8;
+}

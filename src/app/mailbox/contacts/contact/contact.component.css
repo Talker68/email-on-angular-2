@@ -1,0 +1,80 @@
+.contact {
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+
+    background-color: #F1F1F1;
+
+    font-size: 1.5rem;
+
+    overflow: hidden;
+}
+
+/* Инструменты */
+
+.contact__tools {
+    padding: 10px;
+
+    border-bottom: 1px solid #D1D1D1;
+
+    text-align: right;
+}
+.contact__tool {
+    display: inline-block;
+    margin-left: 10px;
+}
+.contact__delete {
+    height: 15px;
+    padding: 0;
+    width: 15px;
+
+    border: none;
+
+    background: url('/assets/img/delete.svg') center center/15px 15px no-repeat;
+
+    cursor: pointer;
+}
+.contact__edit {
+    height: 15px;
+    padding: 0;
+    width: 15px;
+
+    border: none;
+
+    background: url('/assets/img/edit.svg') center center/15px 15px no-repeat;
+
+    cursor: pointer;
+}
+
+/* Информация о контакте */
+
+.contact__info {
+    padding: 10px;
+
+    text-align: center;
+}
+.contact__info-item {
+    margin-bottom: 10px;
+}
+.contact__info-item:last-of-type {
+    margin-bottom: 0;
+}
+.contact__photo {
+    width: 50px;
+
+    border-radius: 50%;
+}
+.contact__name {
+    padding-left: 25px;
+
+    background: url('/assets/img/name.svg') left center/15px 15px no-repeat;
+}
+.contact__email {
+    padding-left: 25px;
+
+    background: url('/assets/img/email.svg') left center/15px 15px no-repeat;
+}
+.contact__phone {
+    padding-left: 25px;
+
+    background: url('/assets/img/phone.svg') left center/15px 15px no-repeat;
+}

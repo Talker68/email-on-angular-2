@@ -1,0 +1,32 @@
+.search {
+    height: 30px;
+    position: relative;
+    width: 100%;
+}
+.search__field {
+    height: 30px;
+    padding: 0 70px 0 10px;
+    width: 100%;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.search__btn {
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 60px;
+
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    background: #4285F4 url('/assets/img/search.svg') center center/15px 15px no-repeat;
+
+    cursor: pointer;
+}
+.search__btn:hover {
+    background-color: #3A77D8;
+}

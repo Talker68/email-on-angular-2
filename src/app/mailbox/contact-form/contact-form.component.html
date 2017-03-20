@@ -1,0 +1,98 @@
+<div class="contact-form">
+
+    <!-- Сообщение об ошибке -->
+
+    <p class="contact-form__error"
+        *ngIf="notValidForm">
+        Форма должна быть валидной!
+    </p>
+
+    <!-- Форма -->
+
+    <form class="contact-form__form"
+        autocomplete="off"
+        *ngIf="contactForm"
+        [formGroup]="contactForm"
+        (ngSubmit)="saveContact(contactForm.value)">
+
+        <!-- Имя -->
+
+        <div class="contact-form__field">
+            <label class="contact-form__label"
+                for="name">
+                Имя:
+            </label>
+
+            <input class="contact-form__input"
+                id="name"
+                type="text"
+                [class.error]="!contactForm.controls['name'].valid
+                    && contactForm.controls['name'].touched"
+                [class.valid]="contactForm.controls['name'].valid
+                    && contactForm.controls['name'].touched"
+                [formControl]="contactForm.controls['name']">
+        </div><!-- .contact-form__field -->
+
+        <!-- Email -->
+
+        <div class="contact-form__field">
+            <label class="contact-form__label"
+                for="email">
+                Email:
+            </label>
+
+            <input class="contact-form__input"
+                id="email"
+                type="text"
+                [class.error]="!contactForm.controls['email'].valid
+                    && contactForm.controls['email'].touched"
+                [class.valid]="contactForm.controls['email'].valid
+                    && contactForm.controls['email'].touched"
+                [formControl]="contactForm.controls['email']">
+        </div><!-- .contact-form__field -->
+
+        <!-- Телефон -->
+
+        <div class="contact-form__field">
+            <label class="contact-form__label"
+                for="phone">
+                Телефон:
+            </label>
+
+            <input class="contact-form__input"
+                id="phone"
+                type="text"
+                [class.error]="!contactForm.controls['phone'].valid
+                    && contactForm.controls['phone'].touched"
+                [class.valid]="contactForm.controls['phone'].valid
+                    && contactForm.controls['phone'].touched"
+                [formControl]="contactForm.controls['phone']">
+        </div><!-- .contact-form__field -->
+
+        <!-- Фото -->
+
+        <div class="contact-form__field">
+            <label class="contact-form__label"
+                for="photo">
+                Фото:
+            </label>
+
+            <input class="contact-form__input"
+                id="photo"
+                type="text"
+                [class.error]="!contactForm.controls['photo'].valid
+                    && contactForm.controls['photo'].touched"
+                [class.valid]="contactForm.controls['photo'].valid
+                    && contactForm.controls['photo'].touched"
+                [formControl]="contactForm.controls['photo']">
+        </div><!-- .contact-form__field -->
+
+        <!-- Кнопка добавления контакта -->
+
+        <button class="contact-form__add-btn"
+            type="submit">
+            Сохранить
+        </button><!-- .contact-form__add-btn -->
+
+    </form><!-- .contact-form__form -->
+</div><!-- .contact-form -->

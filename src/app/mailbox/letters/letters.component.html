@@ -1,0 +1,38 @@
+<div class="letters">
+
+    <!-- Инструменты -->
+
+    <div class="letters__tools">
+        <app-tools [mailboxName]="mailboxName"></app-tools>
+    </div>
+
+    <!-- Список писем -->
+
+    <ul class="letters__list"
+        *ngIf="letters[0]">
+        <li class="letters__item"
+            *ngFor="let letter of letters | letterFilter:filterForLetters | sort:'date'">
+
+            <!-- Чекбокс -->
+
+            <input class="letters__checkbox"
+                type="checkbox"
+                [checked]="checkedAll"
+                (change)="onSelect($event.target.checked, letter.id)">
+
+            <!-- Письмо -->
+
+            <div class="letters__letter"
+                [routerLink]="['./', letter.id]">
+                <p class="letters__letter-name">{{(mailboxName === 'sent') ? letter.addressee : letter.name}}</p>
+                <p class="letters__letter-content">
+                    <span class="letters__letter-subject">{{letter.subject}}</span>&nbsp;&nbsp;-&nbsp;&nbsp;<span class="letters__letter-short-body">{{letter.shortBody}}</span>
+                </p>
+                <p class="letters__letter-date">{{letter.date | letterDate}}</p>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Если писем нет -->
+    <p *ngIf="!letters[0] && !isLoading">{{mailboxName | noLetters}}</p>
+</div>
